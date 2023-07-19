@@ -8,9 +8,14 @@ numbers = [42, 54, 19, 17, 23, 31, 16, 4]
 names = ["Jeff", "Bill", "Addie", "Stephanie", "Zach", "Lukas", "Joe", "Stacy"]
 
 # TODO: the sorted() function can be used to return a new list with sorted data
-
+sorted_numbers = sorted(numbers)
+print(sorted_numbers)
+sorted_names = sorted(names, key=len)
+print(sorted_names)
 
 # TODO: alternately, you can use the list object's sort() method, which sorts the list in-place
+numbers.sort()
+print(numbers)
 
 
 # TODO: To sort custom objects, we can tell the sort function which property to use
